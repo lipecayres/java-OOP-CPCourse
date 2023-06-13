@@ -1,4 +1,3 @@
-
 public class Course {
   private String courseID, courseName;
   private double credits;
@@ -6,6 +5,7 @@ public class Course {
   // empty constructor
   public Course (){}
 
+  // constructor
   public Course(double credits, String courseName, String courseID) {
         this.credits = credits;
         this.courseName = courseName;
@@ -35,9 +35,5 @@ public class Course {
     public String getCourseId() {
         return courseID;
     }
-
-
-
-
   
 }
