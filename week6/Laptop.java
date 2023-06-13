@@ -4,6 +4,7 @@ public class Laptop {
   // empty constructor
   public Laptop (){}
 
+  // constructor
 public Laptop(String idNumber, String brand, String model) {
         this.idNumber = idNumber;
         this.brand = brand;
