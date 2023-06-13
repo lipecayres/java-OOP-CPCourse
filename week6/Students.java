@@ -7,9 +7,10 @@ public class Students {
   private int[] marks;
   public static int gymUsers = 0;
 
-  
+  // empty constructor
   public Students  () {};
 
+  //  constructor
     public Students  (String studentName, String studentID, Course[] courses, Laptop studentLaptop) {
       this.studentName = studentName;
       this.studentID = studentID;   
@@ -34,8 +35,35 @@ public class Students {
     public String getStudentID(){
         return studentID;
     }
+    
+  // Getters and Setters -> Courses
+    public void setCourses(Course[] courses) {
+      this.courses = courses;
+  }
+  
+  public Course[] getCourses() {
+    return courses;
+  }
 
+    // Getters and Setters -> Laptop
+  public void setStudentLaptop(Laptop studentLaptop) {
+    this.studentLaptop = studentLaptop;
+  }
+  
+  public Laptop getStudentLaptop() {
+    return studentLaptop;
+  }
 
+    // Getters and Setters -> Marks
+    public void setMarks(int[] marks) {
+      this.marks = marks;
+  }
+  
+  public int[] marks() {
+    return marks;
+  }
+  
+  // enterGym validation
   public void enterGym () {
     if(Students.gymUsers <=10){
       Students.gymUsers++;
@@ -45,7 +73,7 @@ public class Students {
     }
   }
   
-
+// data validation
   public boolean validateData () {
     if (!studentName.matches("^[A-Z][a-zA-Z]*\\s[A-Z][a-zA-Z]*$")){
       return false;
